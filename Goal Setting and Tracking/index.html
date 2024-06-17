@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Setting and Tracking Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Goal Setting and Tracking Tool</h1>
+        <div class="goal-form">
+            <h2>Set Goals</h2>
+            <form id="goal-form">
+                <div class="form-group">
+                    <label for="goal-name">Goal Name:</label>
+                    <input type="text" id="goal-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="goal-amount">Goal Amount:</label>
+                    <input type="number" id="goal-amount" required>
+                </div>
+                <button type="submit">Add Goal</button>
+            </form>
+        </div>
+
+        <div class="progress-form">
+            <h2>Add Savings</h2>
+            <form id="progress-form">
+                <div class="form-group">
+                    <label for="progress-goal">Goal Name:</label>
+                    <input type="text" id="progress-goal" required>
+                </div>
+                <div class="form-group">
+                    <label for="progress-amount">Amount Saved:</label>
+                    <input type="number" id="progress-amount" required>
+                </div>
+                <button type="submit">Add Savings</button>
+            </form>
+        </div>
+
+        <div class="goal-list">
+            <h2>Goals</h2>
+            <ul id="goal-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
